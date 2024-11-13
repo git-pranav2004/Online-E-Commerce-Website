@@ -1,0 +1,162 @@
+/* Basic styling for the form */
+form {
+    margin: 20px auto; /* Add some margin for better placement */
+    border: 1px solid #ccc; /* Add a thin border */
+    padding: 15px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Add rounded corners for a smoother look */
+    width: fit-content; /* Adjust the width based on content */
+  }
+  
+  /* Styling for labels */
+  label {
+    display: block; /* Make labels appear on separate lines */
+    margin-bottom: 5px; /* Add some space below labels */
+    font-weight: bold; /* Make labels stand out a bit */
+  }
+  
+  /* Styling for input fields */
+  input[type="text"],
+  input[type="email"] {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add some padding for easier typing */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 3px; /* Add rounded corners for a smoother look */
+    font-size: 16px; /* Set font size for readability */
+  }
+  
+  /* Styling for the textarea */
+  textarea {
+    width: 100%; /* Make textarea full width */
+    padding: 10px; /* Add some padding for easier typing */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 3px; /* Add rounded corners for a smoother look */
+    font-size: 16px; /* Set font size for readability */
+    resize: vertical; /* Allow users to resize the textarea vertically */
+  }
+  
+  /* Styling for the submit button */
+  button[type="submit"] {
+    background-color: #4CAF50; /* Green color for the button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to indicate clickability */
+    font-size: 16px; /* Set font size for readability */
+  }
+  
+  /* Styling for the submit button on hover */
+  button[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green for hover effect */
+  }
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire background */
+    z-index: -1; /* Keep the video behind other elements */
+}
+
+/* Container for the Login Form */
+.container {
+    position: relative;
+    z-index: 1; /* Bring the form in front of the background video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Styles */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Fixed width for the form */
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff9900; /* Glow effect */
+}
+
+/* Button Styles */
+button {
+    padding: 10px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff7e5f; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Link Styles */
+p {
+    text-align: center;
+}
+
+a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
